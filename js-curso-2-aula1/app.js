@@ -15,7 +15,7 @@ function exibirTextoNaTela(tag, texto){
     } else {
         console.log("Web Speech API não suportada neste navegador.");
     }
-    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2})
+
 };
 function exibirMensagemInicial(){
 exibirTextoNaTela('h1', 'Jogo do número secreto');
@@ -55,7 +55,7 @@ function gerarNumeroAleatorio(){
      if(listadeNumerosSorteados.includes(numeroEscolido)){
         return gerarNumeroAleatorio(); 
      }else{
-        console.log(listadeNumerosSorteados);
+        
         listadeNumerosSorteados.push(numeroEscolido);
         return numeroEscolido;  
      } 
@@ -75,5 +75,3 @@ function reset(){
 
 }
    
- 
- console.log(numeroSecreto);
